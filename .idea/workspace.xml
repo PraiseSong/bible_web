@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f4ea5a2-8d6e-4eb5-b2f7-f8cb9ea977d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funs/db.php5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/io.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php5" afterPath="$PROJECT_DIR$/index.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bible.css" afterPath="$PROJECT_DIR$/static/css/bible.css" />
@@ -31,11 +30,28 @@
       <file leaf-file-name="index.php5" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="24" selection-start="2103" selection-end="2103" vertical-scroll-proportion="1.1412268">
+            <state line="150" column="32" selection-start="6242" selection-end="6242" vertical-scroll-proportion="-0.3511111">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io.php5" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/io.php5">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="32" selection-start="2570" selection-end="2570" vertical-scroll-proportion="-22.28">
               <folding>
-                <element signature="e#6#162#0" expanded="true" />
-                <element signature="e#937#1452#0" expanded="false" />
+                <element signature="e#6#161#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.php5" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/funs/db.php5">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="5" selection-start="1375" selection-end="1375" vertical-scroll-proportion="-26.76">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,9 +59,9 @@
       <file leaf-file-name="bible.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/bible.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="19" selection-start="8050" selection-end="8050" vertical-scroll-proportion="0.0">
+            <state line="333" column="9" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1362141566000" expanded="true" signature="4779:4836" placeholder="{...}" />
+                <marker date="1362151679000" expanded="true" signature="4779:4836" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -64,6 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/funs/db.php5" />
+        <option value="$PROJECT_DIR$/app/io.php5" />
         <option value="$PROJECT_DIR$/static/css/bible.css" />
         <option value="$PROJECT_DIR$/index.php5" />
       </list>
@@ -137,39 +155,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bible_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bible_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bible_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bible_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="funs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bible_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bible_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,7 +328,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26040173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -402,34 +402,38 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/js/jquery-1.9.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/funs/db.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.5791726">
+        <state line="43" column="5" selection-start="1375" selection-end="1375" vertical-scroll-proportion="-26.76">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/io.php5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="32" selection-start="2570" selection-end="2570" vertical-scroll-proportion="-22.28">
+          <folding>
+            <element signature="e#6#161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/bible.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="19" selection-start="8050" selection-end="8050" vertical-scroll-proportion="0.0">
+        <state line="333" column="9" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1362141566000" expanded="true" signature="4779:4836" placeholder="{...}" />
+            <marker date="1362151679000" expanded="true" signature="4779:4836" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="24" selection-start="2103" selection-end="2103" vertical-scroll-proportion="1.1412268">
-          <folding>
-            <element signature="e#6#162#0" expanded="true" />
-            <element signature="e#937#1452#0" expanded="false" />
-          </folding>
+        <state line="150" column="32" selection-start="6242" selection-end="6242" vertical-scroll-proportion="-0.3511111">
+          <folding />
         </state>
       </provider>
     </entry>
