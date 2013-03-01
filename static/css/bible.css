@@ -231,11 +231,18 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 
 
-
+/* common */
+.fixFloat{
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    zoom: 1;
+}
 
 /* Bible */
 body{
     background: url(http://cross.hk/wp-content/uploads/2012/11/bg.gif) repeat;
+    font-size: 18px;
 }
 
 /* Prepare */
@@ -249,4 +256,78 @@ body{
 }
 #prepare .logo{
     margin-bottom: 10px;
+}
+
+/* topBar */
+#topBar{
+    height: 50px;
+    line-height: 50px;
+    background: #31241a;
+    color: #fff;
+    padding: 0 10px;
+}
+#topBar .logo{
+    width: 48px;
+    height: 48px;
+    margin-top: 1px;
+}
+#topBar .content{
+    margin: 0 auto;
+}
+#topBar .search, #topBar .logo{
+    float:left;
+    margin-right: 30px;
+}
+#topBar .loading{
+    float:right;
+}
+.search{
+    background: url(../images/search.png) no-repeat right center;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+/* dataList */
+#dataList{
+
+}
+#dataList li{
+
+}
+#dataList li span{
+    background: #fcf1cc;
+    border-bottom: 1px solid #e3d297;
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #5e4a07;
+    cursor: pointer;
+}
+#dataList li dl{
+    background: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+}
+#dataList li dl dd{
+    float: left;
+}
+#dataList li dl dd i{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-style: normal;
+    width: 20px;
+    text-align: center;
+}
+#dataList .current i{
+    color: #fff;
+    background: #000;
+}
+#dataList .current div{
+    background: #000;
+    color: #fff;
+    line-height: 30px;
+    padding: 10px;
 }
