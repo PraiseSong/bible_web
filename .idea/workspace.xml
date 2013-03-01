@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f4ea5a2-8d6e-4eb5-b2f7-f8cb9ea977d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php5" afterPath="$PROJECT_DIR$/index.php5" />
-    </list>
+    <list default="true" id="9f4ea5a2-8d6e-4eb5-b2f7-f8cb9ea977d7" name="Default" comment="" />
     <ignored path="bible_web.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +25,7 @@
       <file leaf-file-name="index.php5" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="166" selection-end="166" vertical-scroll-proportion="0.20542082">
+            <state line="8" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.1825963">
               <folding>
                 <element signature="e#6#162#0" expanded="true" />
               </folding>
@@ -331,7 +329,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php5">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="166" selection-end="166" vertical-scroll-proportion="0.20542082">
+        <state line="8" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.1825963">
           <folding>
             <element signature="e#6#162#0" expanded="true" />
           </folding>
