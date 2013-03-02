@@ -34,6 +34,9 @@ switch($action){
     case "query_sections":
         query_sections();
         break;
+    case "query_content":
+        query_content();
+        break;
 }
 
 /**
@@ -106,6 +109,30 @@ function query_sections(){
             }
         }
         echo max($tem_sections);
+    }
+}
+
+/**
+ * 查询具体的经文
+ */
+function query_content(){
+    global $db,$table;
+    $volume = @$_GET["volume"];
+    $chapter = @$_GET["chapter"];
+    $section_start = @$_GET["section_start"];
+    $section_end = @$_GET["section_end"];
+    $verse = null;
+
+    if(!isset($volume)){
+        echo "没有提交书卷的id";
+    }else if(!isset($chapter)){
+        echo "没有提交章数";
+    }else if(!isset($section_start) || !isset($section_end)){
+        echo "没有提交正确的节数";
+    }else{
+        $verse = $chapter.":".$section_start;
+        $resource = $db -> queryUniqueObject("select TextData from $table where Book=$volume and Verse='$verse'");
+        echo json_encode($resource);
     }
 }
 ?>
