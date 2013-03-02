@@ -30,7 +30,7 @@ $(document).ready(function (){
     var querySectionsIO = null;
     var queryContentIO = null;
 
-    (function (){
+    /*(function (){
         $(window).scroll(function (){
             var top = $(window).scrollTop();
             var topBar = $("#topBar");
@@ -50,7 +50,7 @@ $(document).ready(function (){
                 });
             }
         });
-    })();
+    })();*/
 
     function adjustPreparePosition(){
         if(prepared){
@@ -64,11 +64,23 @@ $(document).ready(function (){
             prepareBoxH = prepareBox.outerHeight() < 100 ? 169 : prepareBox.outerHeight();
 
         $('#prepare').css({
-            marginTop: (winH - prepareBoxH) / 2
+            marginTop: (winH - prepareBoxH) / 2 + $(document).scrollTop()
         });
     }
     adjustPreparePosition();
     $(window).bind("resize.adjustPreparePosition",adjustPreparePosition);
+
+    /* 隐藏其它不重要的书卷 */
+    function hideOtherVolumes(){
+        $("#dataList dl").hide();
+        currentVolumeNode.find("dl").show();
+    }
+
+    /* 隐藏其它不重要的章数 */
+    function hideOtherChapters(){
+        currentVolumeNode.find("dd div").hide();
+        currentChapterNode.find("div").show();
+    }
 
     /* 查询所有书卷 */
     function queryVolumes(){
@@ -86,27 +98,26 @@ $(document).ready(function (){
         });
     }
     function queryVolumesSuccess(data){
-        $('#dataList').get(0) && $('#dataList').remove();
-        $('#prepare').get(0) && $('#prepare').fadeOut(200);
         var html = "<ul id=\"dataList\">";
         for(var i=0; i<data.length; i++){
             var volume = data[i];
             html += "<li id="+volume.Book+" data-alias="+volume.Alias+"><span class=\"fixFloat\">"+volume.BookTitle+"</span></li>";
         }
         html += "</ul>";
-        $('body').append(html);
-        bindUItoVolumes();
-        loadingBox.hide();
-        prepared = true;
+        $('#prepare').get(0) && $('#prepare').fadeOut(200, function (){
+            $('body').append(html);
+            prepared = true;
+            $("#topBar").show();
+            bindUItoVolumes();
+        });
     }
     function bindUItoVolumes(){
         $("#dataList span").click(function (e){
             currentVolumeNode = $(e.currentTarget).parent();
-
+            hideOtherVolumes();
             queryChapters(currentVolumeNode.attr("id"));
         });
     }
-    queryVolumes();
 
     /* 查询当前书卷下的所有章数 */
     function queryChapters(volumeId){
@@ -136,6 +147,7 @@ $(document).ready(function (){
             currentVolumeNode.find("dl.fixFloat").remove();
         }
         currentVolumeNode.append(html);
+        setScrollTopByNode(currentVolumeNode);
         bindUItoChapters(currentVolumeNode);
         loadingBox.hide();
     }
@@ -144,6 +156,7 @@ $(document).ready(function (){
             currentVolumeNode.find('.fixFloat dd').removeClass("current");
             currentChapterNode = $(e.currentTarget).parent();
             currentChapterNode.addClass("current");
+            hideOtherChapters();
             chapter = $(e.currentTarget).html();
             querySections();
         });
@@ -176,12 +189,15 @@ $(document).ready(function (){
             currentChapterNode.find("div.fixFloat").remove();
         }
         currentChapterNode.append(html);
+        setScrollTopByNode(currentChapterNode);
         bindUItoSections();
         loadingBox.hide();
     }
     function bindUItoSections(){
         currentChapterNode.find("div s").click(function (e){
+            currentChapterNode.find("div s").removeClass("selected");
             currentSectionNode = $(e.currentTarget);
+            currentSectionNode.addClass("selected");
             section_start = currentSectionNode.attr("id");
             queryContent();
         });
@@ -198,6 +214,7 @@ $(document).ready(function (){
         if(section_end < section_start){
             return ;
         }
+        loadingBox.show().html(loadingTxt);
         queryContentIO && queryContentIO.abort();
         queryContentIO = $.ajax(url, {
             data: "action="+queryContentAction+"&volume="+volume+"&chapter="+chapter+"&section_start="+section_start+
@@ -211,17 +228,26 @@ $(document).ready(function (){
                         currentChapterNode.find("div").find("p").remove();
                     }
                     currentChapterNode.find("div").append("<p>"+data.TextData+"</p>");
-                    var top = currentSectionNode.offset().top;
-                    $(document).scrollTop(top);
+                    loadingBox.hide();
+                    setScrollTopByNode(currentSectionNode);
                     section_end = null;
                     section_start = null;
+                }else{
+                    loadingBox.show().html(data);
                 }
             }
         });
     }
 
-
     function error(){
         loadingBox.show().html(errorTxt);
     }
+
+    /* 根据给定元素的位置来动态设置滚动条的位置 */
+    function setScrollTopByNode(node){
+        var top = node.offset().top;//-$("#topBar").height();
+        $(document).scrollTop(top);
+    }
+
+    queryVolumes();
 });

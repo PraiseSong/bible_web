@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f4ea5a2-8d6e-4eb5-b2f7-f8cb9ea977d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bible.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/io.php5" afterPath="$PROJECT_DIR$/app/io.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php5" afterPath="$PROJECT_DIR$/index.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bible.css" afterPath="$PROJECT_DIR$/static/css/bible.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bible.js" afterPath="$PROJECT_DIR$/static/js/bible.js" />
     </list>
     <ignored path="bible_web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="index.php5" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-7.5882354">
+            <state line="23" column="17" selection-start="984" selection-end="984" vertical-scroll-proportion="-14.72">
               <folding />
             </state>
           </provider>
@@ -40,7 +38,7 @@
       <file leaf-file-name="bible.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/bible.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="26" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.90358126">
+            <state line="251" column="4" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.81714284">
               <folding />
             </state>
           </provider>
@@ -69,9 +67,9 @@
       <file leaf-file-name="bible.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/bible.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="343" column="17" selection-start="8291" selection-end="8291" vertical-scroll-proportion="-10.745455">
+            <state line="283" column="18" selection-start="7263" selection-end="7263" vertical-scroll-proportion="8.981818">
               <folding>
-                <marker date="1362198678000" expanded="true" signature="4782:4839" placeholder="{...}" />
+                <marker date="1362200709000" expanded="true" signature="4782:4839" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -91,8 +89,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/funs/db.php5" />
-        <option value="$PROJECT_DIR$/index.php5" />
         <option value="$PROJECT_DIR$/app/io.php5" />
+        <option value="$PROJECT_DIR$/index.php5" />
         <option value="$PROJECT_DIR$/static/css/bible.css" />
         <option value="$PROJECT_DIR$/static/js/bible.js" />
       </list>
@@ -455,6 +453,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="984" selection-end="984" vertical-scroll-proportion="-14.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bible.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="18" selection-start="7263" selection-end="7263" vertical-scroll-proportion="8.981818">
+          <folding>
+            <marker date="1362200709000" expanded="true" signature="4782:4839" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/io.php5">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="34" selection-start="3288" selection-end="3288" vertical-scroll-proportion="-22.28">
@@ -464,25 +478,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bible.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="17" selection-start="8291" selection-end="8291" vertical-scroll-proportion="-10.745455">
-          <folding>
-            <marker date="1362198678000" expanded="true" signature="4782:4839" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-7.5882354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/bible.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="26" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.90358126">
+        <state line="251" column="4" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.81714284">
           <folding />
         </state>
       </provider>

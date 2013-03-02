@@ -20,29 +20,6 @@
             <span class="loading">处理中...</span>
         </div>
     </div>
-
-    <ul id="dataList">
-        <li>
-            <span>创世纪</span>
-            <dl class="fixFloat">
-                <dd>
-                    <i>1</i>
-                </dd>
-                <dd class="current">
-                    <i>2</i>
-                    <div class="fixFloat">
-                        <s>2:1</s>
-                        <s>2:2</s>
-                        <p>地是空虚混沌。渊面黑暗。神的灵运行在水面上。</p>
-                    </div>
-                </dd>
-            </dl>
-        </li>
-        <li>
-            <span>出埃记</span>
-        </li>
-    </ul>
-
     <div id="prepare">
         <img src="static/images/logo.png" alt="中文版在线圣经" class="logo" />
         <img src="static/images/ajax-loader.gif" alt="中文版在线圣经正在加载圣经数据" />
