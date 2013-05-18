@@ -98,10 +98,10 @@ $(document).ready(function (){
         });
     }
     function queryVolumesSuccess(data){
-        var html = "<ul id=\"dataList\">";
+        var html = "<ul id=\"dataList\" class=\"fixFloat\">";
         for(var i=0; i<data.length; i++){
             var volume = data[i];
-            html += "<li id="+volume.Book+" data-alias="+volume.Alias+"><span class=\"fixFloat\">"+volume.BookTitle+"</span></li>";
+            html += "<li id="+volume.Book+" data-alias="+volume.Alias+"><span class=\"nickName\">"+ volume.ZH_NickName +"</span><span class=\"fixFloat fullName\">"+volume.BookTitle+"</span></li>";
         }
         html += "</ul>";
         $('#prepare').get(0) && $('#prepare').fadeOut(200, function (){
@@ -249,5 +249,5 @@ $(document).ready(function (){
         $(document).scrollTop(top);
     }
 
-    queryVolumes();
+    //queryVolumes();
 });

@@ -17,7 +17,7 @@ require_once("../funs/db.php5");
 
 $db_server = "localhost";
 $db_user = "root";
-$db_password = "ZHUqi@159";
+$db_password = "ZHUqi@WEIli&7";
 $base = "bible";
 $table = "crossbible";
 $db = new DB($db_server, $db_user, $db_password, $base);
@@ -47,7 +47,7 @@ function query_volumes(){
     global $db,$table;
     $volumes = array();
 
-    $resource = $db -> query("select distinct Alias,Book,BookTitle from $table");
+    $resource = $db -> query("select distinct Alias,Book,BookTitle,ZH_NickName from $table");
     while($data = $db -> fetchNextObject($resource)){
         array_push($volumes, $data);
     }

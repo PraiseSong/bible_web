@@ -264,7 +264,7 @@ body{
     line-height: 50px;
     background: #31241a;
     color: #fff;
-    display: none;
+    display: block;
 }
 #topBar .logo{
     width: 48px;
@@ -294,17 +294,34 @@ body{
 
 }
 #dataList li{
-
+    float: left;
+    padding: 10px;
+    text-align: center;
+    height: 60px;
+    line-height:23px;
+}
+#dataList li.current{
+    background: #f6f6f6;
+}
+#dataList li .nickName{
+    font-size: 25px;
+    font-weight: 700;
+}
+#dataList li .fullName{
+    font-size: 14px;
+    color: gray;
+    margin-top: 3px;
 }
 #dataList li span{
-    background: #fcf1cc;
+    display: block;
+    /*background: #fcf1cc;
     border-bottom: 1px solid #e3d297;
     display: block;
     padding: 0 10px;
     height: 40px;
     line-height: 40px;
     color: #5e4a07;
-    cursor: pointer;
+    cursor: pointer;*/
 }
 #dataList li dl{
     background: #f6f6f6;
@@ -347,4 +364,24 @@ body{
     clear: both;
     background: #644934;
     padding: 5px;
+}
+
+.chapterBox{
+    top: 130px;
+    width: 100%;
+    position: absolute;
+    background: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+}
+.chapterBox dd{
+    float: left;
+}
+.chapterBox dd i{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-style: normal;
+    width: 20px;
+    text-align: center;
 }
